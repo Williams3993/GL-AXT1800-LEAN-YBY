@@ -96,6 +96,12 @@ jobs:
     - name: Clone v2ray-geodata repository
       run: cd openwrt && git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
       
+    - name: Update golang package
+      run: |
+        cd openwrt
+        rm -rf feeds/packages/lang/golang
+        git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+      
 
     - name: Load custom config
       run: |
