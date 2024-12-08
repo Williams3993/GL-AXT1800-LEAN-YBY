@@ -5,7 +5,7 @@ sed -i 's/192.168.1.1/192.168.89.1/g' package/base-files/files/bin/config_genera
 # Step 2: 修改主机名
 # 将默认的主机名 "OpenWrt" 修改为 "OpenWrt23-X86-X64"
 # 主机名不能是纯数字，也不能使用中文字符
-sed -i 's/ImmortalWrt/ImmortalWrt24-X86-X64/g' package/base-files/files/bin/config_generate
+#sed -i 's/ImmortalWrt/ImmortalWrt24-X86-X64/g' package/base-files/files/bin/config_generate
 
 # Step 3: 修改默认时区
 # 将默认时区从 "UTC" 修改为 "CST-8"
