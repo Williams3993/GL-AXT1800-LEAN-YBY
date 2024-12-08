@@ -6,7 +6,7 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt
+  REPO_URL: https://github.com/istoreos/istoreos
   REPO_BRANCH: openwrt-24.10
   CONFIG_FILE: .config
   SELF_BEFORE_SH: before-update-custom.sh
