@@ -81,20 +81,20 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
       
-    - name: Delete mosdns package
-      run: cd openwrt && rm -rf feeds/smpackage/mosdns
+    #- name: Delete mosdns package
+      #run: cd openwrt && rm -rf feeds/smpackage/mosdns
       
-    - name: Delete mosdns package
-      run: cd openwrt && rm -rf feeds/smpackage/luci-app-mosdns
+    #- name: Delete mosdns package
+      #run: cd openwrt && rm -rf feeds/smpackage/luci-app-mosdns
 
-    - name: Delete v2ray-geodata package
-      run: cd openwrt && rm -rf feeds/packages/net/v2ray-geodata
+    #- name: Delete v2ray-geodata package
+      #run: cd openwrt && rm -rf feeds/packages/net/v2ray-geodata
 
-    - name: Clone luci-app-mosdns repository
-      run: cd openwrt && git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+    #- name: Clone luci-app-mosdns repository
+      #run: cd openwrt && git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
 
-    - name: Clone v2ray-geodata repository
-      run: cd openwrt && git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
+    #- name: Clone v2ray-geodata repository
+      #run: cd openwrt && git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
       
     - name: Update golang package
       run: |
