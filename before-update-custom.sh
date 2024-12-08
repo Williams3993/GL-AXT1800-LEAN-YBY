@@ -10,3 +10,11 @@
 
 # echo "src-git kenzo https://github.com/kenzok8/openwrt-packages" >> ./feeds.conf.default   
 #sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
+
+
+
+
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git' feeds.conf.default
+sed -i '$a src-git openclash https://github.com/vernesong/OpenClash' feeds.conf.default
+sed -i '$a src-git mosdns https://github.com/sbwml/luci-app-mosdns' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
